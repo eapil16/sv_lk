@@ -1,7 +1,7 @@
 {
-  "name": "easy-webdev-startpack",
-  "version": "3.1.1",
-  "description": "HTML5+CSS3 template for easy start website project'",
+  "name": "sv-lk",
+  "version": "1",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "html": "gulp",
@@ -16,8 +16,10 @@
   "devDependencies": {
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
+    "autoprefixer": "^10.4.16",
     "browser-sync": "^2.26.14",
     "chalk": "^4.1.1",
+    "css-loader": "^6.8.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
@@ -40,10 +42,15 @@
     "gulp-webp": "^4.0.1",
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
+    "postcss-loader": "^7.3.3",
     "require-dir": "^1.2.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
-    "sass": "^1.56.0"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2"
   }
 }

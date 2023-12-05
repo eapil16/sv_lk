@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 @@include('components/page-blocks/_head.html',{
-"lang":"en",
-"title":"Easy-webdev-startpack v3.0",
-"description":"Gulp pack for easy html/php markup development",
+"lang":"ru",
+"title":"Восстановление пароля",
+"description":"",
 "keywords":"",
-"favicon":"img/favicons/favicon",
+"favicon":"",
 })
 
 <body>
-	@@include('components/page-blocks/_header.html')
-	<main class="main"></main>
+	@@include('components/page-blocks/_header-simple.html')
+	<main class="main">
+		<div class="block-form">
+		<ul class="main-list">
+			<li>
+				<a href="password-recovery.html">Восстановление пароля</a>
+			</li>
+			<li>
+				<a href="password-recovery-error.html">Восстановление пароля - ошибка</a>
+			</li>
+			<li>
+				<a href="password-recovery-letter-sent.html">Восстановление пароля - письмо успешно отправлено</a>
+			</li>
+			<li>
+				<a href="code-verification.html">Получение кода подтверждения</a>
+			</li>
+			<li>
+				<a href="code-verification-tooltip.html">Получение кода подтверждения - тултип не поступает звонок</a>
+			</li>
+		</ul>
+		
+	</main>
 	@@include('components/page-blocks/_footer.html')
 	@@include('components/page-blocks/_scripts.html')
 </body>

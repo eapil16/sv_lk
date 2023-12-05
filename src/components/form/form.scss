@@ -1,0 +1,75 @@
+.form {
+    &-group {
+        margin: 0 0 20px 0;
+        &__error {
+            ::-webkit-input-placeholder {color:#E70406;}
+            ::-moz-placeholder          {color:#E70406;}
+            :-moz-placeholder           {color:#E70406;}
+            :-ms-input-placeholder      {color:#E70406;}
+            span {
+                font-size: 15px;
+                line-height: 18px;
+                font-family: myriadpro;
+                font-weight: 400;
+                color: #E70406;
+                display: block;
+                margin: 12px 0 0 0;
+                @media screen and (max-width: 575px) {
+                   margin: 12px 35px 0 0;
+                }
+                a {
+                    color: #E70406;
+                    text-decoration: none;
+                    transition: all 400ms ease-in-out;
+                    &:hover {
+                        color: #E70406;
+                        text-decoration: underline;
+                        transition: all 400ms ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    &-control {
+        display: block;
+        width: 100%;
+        padding: 18px 15px;
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration: none;
+        transition: all 400ms ease-in-out;
+        font-family: myriadpro;
+        font-weight: 400;
+        background-color: #fff;
+        border: 1px solid #E0E2E5;
+        border-radius: 6px;
+        &:focus {
+            border-color: #404040;
+            background: #fff;
+            box-shadow: none;
+            outline: none;
+        }
+        &__error {
+            border-color: #E70406;
+            color: #E70406;
+            &:focus {
+                border-color: #E70406;
+                color: #E70406;
+            }
+        }
+    }
+    &-agreement {
+        color: #949494;
+        margin: 0;
+        a {
+            color: #000;
+            text-decoration: underline;
+            transition: all 400ms ease-in-out;
+            &:hover {
+                color: #000;
+                text-decoration: none;
+                transition: all 400ms ease-in-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.button {
+    padding: 14px 25px 15px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: myriadpro;
+    font-weight: 400;
+    transition: all 400ms ease-in-out;
+    text-decoration: none;
+    &:hover {
+        transition: all 400ms ease-in-out;
+        text-decoration: none;
+    }
+    &-gray {
+        background: #F1F3F6;
+        color: #949494;
+        &:hover {
+            background: #E70406;
+            color: #fff;
+        }
+    }
+    &-red {
+        background: #E70406;
+        color: #fff;
+        &:hover {
+            background: #9e0306;
+            color: #fff;
+        }
+    }
+    &.disabled {
+        background: #F1F3F6;
+        color: #949494;
+        cursor: default; 
+        opacity: 1; 
+    }
+}
+
+:not(.btn-check)+.btn:active {
+    color: #fff;
+    background: #E70406;
+}
