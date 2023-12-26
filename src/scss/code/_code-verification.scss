@@ -10,8 +10,39 @@
         p {
             color: #949494;
             margin: 0;
+            font-size: 15px;
+            line-height: 18px;
+            font-family: myriadpro;
+            font-weight: 400;
             @media screen and (max-width: 767px) {
-                margin: 0 0 30px 0 !important;
+                margin: 0 0 30px 0;
+            }
+        }
+        &__link {
+            font-size: 15px;
+            line-height: 18px;
+            color: #137CDF;
+            font-family: myriadpro;
+            font-weight: 400;
+            transition: all 400ms ease-in-out;     
+            text-decoration: none;
+            &:hover {
+                color: #137CDF;
+                text-decoration: underline;
+                transition: all 400ms ease-in-out;       
+            }
+            @media screen and (max-width: 767px) {
+                margin: 0 0 30px 0;
+                display: inline-block;
+            }
+        }
+        &__invert {
+            .code{
+                &-link {
+                    span {
+                        margin: -2px 10px 0 0;
+                    }
+                }
             }
         }
     }

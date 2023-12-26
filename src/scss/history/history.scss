@@ -1,0 +1,187 @@
+.history {
+    margin: 50px 0 70px;
+    @media screen and (max-width: 767px) {
+        margin-top: 30px;
+    }
+    .block-form__back {
+        margin: 0 0 15px 0;
+    }
+    h1 {
+        font-size: 34px;
+        line-height: 41px;
+        color: #000;
+        font-family: myriadpro;
+        font-weight: bold;
+        margin: 0 0 54px 0;
+        @media screen and (max-width: 767px) {
+            margin: 0 0 34px 0;
+        }
+    }
+    &-period {
+        margin: 0 0 25px 0;
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 26px;
+            line-height: 26px;
+            color: #000;
+            margin: 0 10px;
+            font-family: myriadpro;
+            font-weight: 400;
+        }
+        .form-control {
+            min-width: 270px;
+            max-width: 270px;
+            &:focus {
+                border-color: #E60407;
+            }
+            @media screen and (max-width: 767px) {
+                min-width: calc(50% - 15px);
+                max-width: calc(50% - 15px);
+            }
+        }
+        input[type=date]::-webkit-calendar-picker-indicator{
+            background: transparent;
+        }
+        input[type=date]{
+            background: url(../../img/arrow-bottom.svg) 95% 50% no-repeat;
+        }
+        &__button {
+            border-radius: 6px;
+            border: 1px solid #E0E2E5;
+            padding:21px 35px 20px 15px;
+            font-size: 15px;
+            line-height: 15px;
+            color: #000;
+            font-family: myriadpro;
+            font-weight: 400;
+            background: #fff;
+            text-align: left;
+            position: relative;
+            @media screen and (max-width: 767px) {
+                min-width: calc(50% - 15px);
+                max-width: calc(50% - 15px);
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 23px;
+                right: 15px;
+                width: 12px;
+                height: 10px;
+                background: url(../../img/arrow-bottom.svg) center center no-repeat;
+                transition: all 400ms ease-in-outs; 
+            }
+        }
+    }
+    &-block {
+        width: 100%;
+        max-width: 770px;
+        margin: 0 0 50px 0;
+        p.date {
+            font-size: 15px;
+            line-height: 18px;
+            color: #828D9E;
+            font-family: myriadpro;
+            font-weight: 400;
+            margin: 0 0 17px 0;
+        }
+    }
+    &-item {
+        padding: 15px;
+        border-radius: 10px;
+        margin: 0 0 7px 0;
+        background: #F1F3F6;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        &:last-child {
+            margin: 0;
+        }
+        &__info {
+            p {
+                font-size: 15px;
+                line-height: 18px;
+                color: #828D9E;
+                font-family: myriadpro;
+                font-weight: 400;
+                margin: 0 0 7px 0;
+            }
+        }
+        &__total {
+            p {
+                color: #828D9E;
+                font-size: 15px;
+                line-height: 18px;
+                font-family: myriadpro;
+                font-weight: 400;
+                margin: 0 0 6px 0;
+                &.summ {
+                    font-weight: bold;
+                    color: #000;
+                    margin: 0;
+                    &.red {
+                        color: #E70406;
+                    }
+                }
+            }
+        }
+        &__button {
+            padding: 0;
+            margin: 0;
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            line-height: 12px;
+            width: 12px;
+            transition: all 400ms ease-in-out;
+            img {
+                width: 100%;
+            }
+            &.active {
+                transform: rotate(180deg);
+                transition: all 400ms ease-in-out;
+            }
+        }
+        &__dropdown {
+            height: 0;
+            overflow: hidden;
+            padding: 0;
+            width: 100%;
+            p {
+                font-family: 15px;
+                line-height: 18px;
+                color: #000;
+                font-family: myriadpro;
+                font-weight: bold;
+                margin: 18px 0 13px 0;
+            }
+            table {
+                width: 100%;
+                margin: 0 0 12px 0;
+                border-collapse: collapse;
+                td {
+                    padding: 14px 12px 12px;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #373737;
+                    font-family: myriadpro;
+                    font-weight: 400;
+                    &:last-child {
+                        color: #000;
+                        text-align: right;
+                        white-space: nowrap;
+                    }
+                }
+                tr:nth-of-type(odd) {
+                    background: #fff;
+                }
+            }
+            &.show {
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,317 @@
+.personal {
+    &-area {
+        display: flex;
+        align-items: flex-start;
+        margin: 50px 0 80px;
+        @media screen and (max-width: 767px) {
+            margin: 30px 0 70px;
+            display: block;
+        }
+        &__account {
+            min-width: 370px;
+            max-width: 370px;
+            margin: 0 30px 0 0;
+            @media screen and (max-width: 991px) {
+                min-width: 320px;
+                max-width: 320px;
+            }
+            @media screen and (max-width: 767px) {
+                min-width: 100%;
+                max-width: 100%;
+                margin: 0 0 70px 0;
+            }
+            h1 {
+                font-size: 22px;
+                line-height: 27px;
+                margin: 0 0 26px 0;
+                color: #000000;
+                font-family: myriadpro;
+                font-weight: 500;
+            }
+            &_block {
+                border-radius: 20px;
+                background: #fff;
+                padding: 30px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+                @media screen and (max-width: 991px) {
+                    padding: 20px;
+                }
+            }
+            &_caption {
+                margin: 0 0 8px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #000000;
+                    margin: 0 15px 0 0;
+                    font-family: myriadpro;
+                    font-weight: 500;
+                }
+                .link {
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #137CDF;
+                    text-decoration: none;
+                    font-family: myriadpro;
+                    font-weight: 400;
+                    transition: all 400ms ease-in-out;
+                    &:hover {
+                        color: #137CDF;
+                        transition: all 400ms ease-in-out;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &_item {
+                margin: 0 0 20px 0;
+                &:last-child {
+                    margin: 0;
+                }
+                p {
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #949494;
+                    font-family: myriadpro;
+                    font-weight: 400;
+                    margin: 0;
+                    &.title {
+                        margin: 0 0 9px 0;
+                        color: #000000;
+                    }
+                    &.status {
+                        padding: 6px 15px 5px;
+                        display: inline-block;
+                        border-radius: 30px;
+                        margin: 9px 0 0 0;
+                        &.active {
+                            background: #F1F3F6;
+                            color: #000000;
+                        }
+                        &.no-active {
+                            background: #FFF5F5;
+                            color: #E70406;
+                        }
+                        &.closed {
+                            color: #828D9E;
+                            background: #F1F3F6;
+                        }
+                    }
+                }
+            }
+            &_balance {
+                padding: 20px;
+                border-radius: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                background: #F1F3F6;
+                .balance {
+                    &-item {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 50%;
+                        p {
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #828D9E;
+                            margin: 0 0 4px 0;
+                            font-family: myriadpro;
+                            font-weight: 400;
+                            &.balance {
+                                font-size: 17px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 0;
+                                font-weight: bold;
+                                &-red {
+                                    color: #E70406;
+                                }
+                            }
+                        }
+                    }
+                    &-button {
+                        width: 100%;
+                        margin: 15px 0 0 0;
+                        .button {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &__content {
+            width: 100%;
+            h2 {
+                font-size: 22px;
+                line-height: 27px;
+                margin: 0 0 26px 0;
+                color: #000000;
+                font-family: myriadpro;
+                font-weight: 500;
+            }
+            p.info {
+                font-size: 17px;
+                color: #828D9E;
+                line-height: 20px;
+                font-family: myriadpro;
+                font-weight: 400;
+            }
+            &_item {
+                border-radius: 20px;
+                padding: 30px;
+                background: #F1F3F6;
+                margin: 0 0 10px 0;
+                @media screen and (max-width: 767px) {
+                    padding: 20px;
+                }
+                p {
+                    &.note {
+                        color: #828D9E;
+                        font-family: myriadpro;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        margin: 0 0 20px 0;
+                    }
+                    &.title {
+                        color: #000;
+                        font-family: myriadpro;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 20px;
+                        margin: 0 0 12px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .price {
+                            font-weight: 400;
+                        }
+                    }
+                    &.desc {
+                        display: flex;
+                        align-items: center;
+                        color: #000;
+                        font-family: myriadpro;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        margin: 0 0 13px 0;
+                        &:last-child {
+                            margin: 0;
+                        }
+                        img {
+                            width: auto;
+                            max-width: 12px;
+                            margin: 0 10px 0 0;
+                        }
+                    }
+                }
+                &.no-active {
+                    p {
+                        &.note {
+                            color:#828D9E;
+                        }
+                        &.title {
+                            color: #828D9E;
+                        }
+                        &.desc {
+                            color:#828D9E;
+                            img {
+                                filter: grayscale(100%);
+                                opacity: 0.4;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+        &.loading {
+            .personal {
+                &-area {
+                    &__account {
+                        h1 {
+                            color: #F1F3F6;
+                            background: #F1F3F6;
+                            border-radius: 20px;
+                        }
+                        &_block {
+                            background: #F1F3F6;
+                            box-shadow: none;
+                        }
+                        &_caption {
+                            p {
+                                background: #D9DEE5;
+                                color: #D9DEE5;
+                                border-radius: 20px;
+                            }
+                            .link {
+                                color: #D9DEE5;
+                                background: #D9DEE5;
+                                border-radius: 20px;
+                            }
+                        }
+                        &_item {
+                            p {
+                                color: #D9DEE5;
+                                background: #D9DEE5;
+                                display: inline-block;
+                                border-radius: 20px;
+                            }
+                        }
+                        &_balance  {
+                            .balance-item  {
+                                p {
+                                    color: #D9DEE5;
+                                    background: #D9DEE5;
+                                    display: inline-block;
+                                    border-radius: 20px;
+                                }
+                            }
+                            .balance-button {
+                                .button-red {
+                                    background: #D9DEE5;
+                                    color: #D9DEE5;
+                                }
+                            }
+                        }
+                    }
+                    &__content {
+                        h2 {
+                            color: #F1F3F6;
+                            background: #F1F3F6;
+                            border-radius: 20px;
+                        }
+                        &_item {
+                            p {
+                                &.note {
+                                    color: #D9DEE5;
+                                    background: #D9DEE5;
+                                    display: inline-block;
+                                    border-radius: 20px;
+                                }
+                                &.title {
+                                    span {
+                                        color: #D9DEE5;
+                                        background: #D9DEE5;
+                                        border-radius: 20px;
+                                    }
+                                }
+                                &.desc {
+                                    color: #D9DEE5;
+                                    background: #D9DEE5;
+                                    border-radius: 20px;
+                                    img {
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

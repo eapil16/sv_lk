@@ -1,14 +1,31 @@
-@import "node_modules/bootstrap/scss/bootstrap.scss";
 @import 'base/*.scss';
 @import 'global/*.scss';
 @import '**/_*.scss';
 @import '../components/**/*.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    main {
+        flex: 1 1 auto;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 // стилизация списка на index.html
 .main-list {
     display: block;
     width: 100%;
     max-width: 500px;
+    position: relative;
+    z-index: 50;
     li {
         display: block;
         padding: 0;

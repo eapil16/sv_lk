@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Личный кабинет – загрузка блоков",
+"description":"",
+"keywords":"",
+"favicon":"",
+})
+
+<body>
+	<div class="wrapper">
+		@@include('components/page-blocks/_header.html')
+		<main class="main">
+			<div class="container-fluid">
+				<div class="personal-area loading">
+					<div class="personal-area__account">
+						<h1>Лицевой счет</h1>
+						<div class="personal-area__account_block">
+							<div class="personal-area__account_caption">
+								<p>№ 18765901968</p>
+								<a href="#" class="link">Сменить</a>
+							</div>
+							<div class="personal-area__account_item">
+								<p>г. Кстово, пл. Мира, д. 2Б, кв. 64 </p>
+								<p class="status active">Статус договора: Активен</p>
+							</div>
+							<div class="personal-area__account_item">
+								<p class="title">Система расчета: Авансовая</p>
+								<p>Внесите оплату до 1.11.2023</p>
+							</div>
+							<div class="personal-area__account_balance">
+								<div class="balance-item">
+									<p>Баланс</p>
+									<p class="balance balance-red">-450 руб.</p>
+								</div>
+								<div class="balance-item">
+									<p>К оплате</p>
+									<p class="balance">450 руб.</p>
+								</div>
+								<div class="balance-button">
+									<a href="#" class="button button-red">Пополнить баланс</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="personal-area__content">
+						<h2>Подключенные услуги</h2>
+						<div class="personal-area__content_item">
+							<p class="note">Интернет</p>
+							<p class="title">
+								<span>Кстово на ладони 100М</span>
+								<span class="price">400 руб./мес.</span>
+							</p>
+							<p class="desc">
+								<img src="img/icon-1.svg" alt="">
+								Интернет: до 100 Мбит/с
+							</p>
+						</div>
+						<div class="personal-area__content_item">
+							<p class="note">Телевидение</p>
+							<p class="title">
+								<span>Близкий TV</span>
+								<span class="price">300 руб./мес.</span>
+							</p>
+							<p class="desc">
+								<img src="img/icon-2.svg" alt="">
+								Цифровое ТВ: 144 канала
+							</p>
+						</div>
+						<div class="personal-area__content_item">
+							<p class="note">Видеонаблюдение</p>
+							<p class="title">
+								<span>За безопасность</span>
+								<span class="price">350 руб./мес.</span>
+							</p>
+							<p class="desc">
+								<img src="img/icon-3.svg" alt="">
+								Видеонаблюдение: 1 камера
+							</p>
+							<p class="desc">
+								<img src="img/icon-4.svg" alt="">
+								Архив 7 дней
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('components/page-blocks/_footer.html')
+		@@include('components/page-blocks/_scripts.html')
+	</div>
+</body>
+
+</html>

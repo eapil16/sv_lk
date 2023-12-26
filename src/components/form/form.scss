@@ -1,6 +1,7 @@
 .form {
     &-group {
         margin: 0 0 20px 0;
+        position: relative;
         &__error {
             ::-webkit-input-placeholder {color:#E70406;}
             ::-moz-placeholder          {color:#E70406;}
@@ -33,9 +34,9 @@
     &-control {
         display: block;
         width: 100%;
-        padding: 18px 15px;
+        padding: 20px 15px 18px;
         font-size: 15px;
-        line-height: 18px;
+        line-height: 15px;
         text-decoration: none;
         transition: all 400ms ease-in-out;
         font-family: myriadpro;
@@ -57,10 +58,17 @@
                 color: #E70406;
             }
         }
+        &.password {
+            padding: 20px 50px 18px 15px;
+        }
     }
     &-agreement {
         color: #949494;
         margin: 0;
+        font-size: 15px;
+        line-height: 18px;
+        font-family: myriadpro;
+        font-weight: 400;
         a {
             color: #000;
             text-decoration: underline;

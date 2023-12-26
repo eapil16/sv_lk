@@ -1,0 +1,67 @@
+.notifications {
+    margin: 50px 0 70px;
+    @media screen and (max-width: 767px) {
+        margin-top: 30px;
+    }
+    .block-form__back {
+        margin: 0 0 15px 0;
+    }
+    h1 {
+        font-size: 34px;
+        line-height: 41px;
+        color: #000;
+        font-family: myriadpro;
+        font-weight: bold;
+        margin: 0 0 54px 0;
+        @media screen and (max-width: 767px) {
+            margin: 0 0 34px 0;
+        }
+    }
+    &-block {
+        margin: 0 0 50px 0;
+        max-width: 770px;
+        p.date {
+            font-size: 17px;
+            line-height: 26px;
+            margin: 0 0 26px 0;
+            color: #828D9E;
+            font-family: myriadpro;
+            font-weight: 400;
+        }
+        &__item {
+            margin: 0 0 20px 0;
+            border-radius: 10px;
+            padding: 30px;
+            background: #F1F3F6;
+            &:last-child {
+                margin: 0;
+            }
+            @media screen and (max-width: 767px) {
+                padding: 20px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 18px;
+                color: #000;
+                font-family: myriadpro;
+                font-weight: 400;
+                margin: 0 0 12px 0;
+                &.title {
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #000;
+                    font-family: myriadpro;
+                    font-weight: 500;
+                }
+                &.time {
+                    color: #828D9E;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &-link {
+        width: 100%;
+        max-width: 770px;
+    }
+}

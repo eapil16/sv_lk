@@ -1,0 +1,78 @@
+.radiobox {
+    width: 100%;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    p {
+        margin: 0 0 12px 0;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    input[type="radio"] {
+        display: none;
+        padding: 0;
+        & + label {
+            cursor: pointer;
+            padding: 13px 13px 13px 48px;
+            position: relative;
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+            border: 1px solid #E0E2E5;
+            transition: all 400ms ease-in-out;
+            &:hover {
+                border-color: #000;
+                transition: all 400ms ease-in-out;
+            }
+            .number {
+                font-size: 15px;
+                line-height: 18px;
+                color: #000;
+                display: block;
+                margin: 0 0 2px 0;
+                font-family: myriadpro;
+                font-weight: 400;
+            }
+            .address {
+                color: #828D9E;
+                font-family: myriadpro;
+                font-weight: 400;
+                display: block;
+                margin: 0;
+                font-size: 12px;
+                line-height: 15px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: calc(50% - 9px);
+                left: 15px;
+                width: 18px;
+                height: 18px;
+                border: 1px solid #949494;
+                border-radius: 50%;
+                background: #fff;
+            }
+        }
+        &:checked  {
+            & + label {
+                border-color: #E70406;
+                &:before {
+                    border-color: #E70406;
+                    z-index: 5;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - 4px);
+                    left: 20px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: #E70406;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}

@@ -8,6 +8,8 @@
     font-weight: 400;
     transition: all 400ms ease-in-out;
     text-decoration: none;
+    display: inline-block;
+    text-align: center;
     &:hover {
         transition: all 400ms ease-in-out;
         text-decoration: none;
@@ -33,6 +35,11 @@
         color: #949494;
         cursor: default; 
         opacity: 1; 
+    }
+    &-white {
+        border-radius: 6px;
+        border: 1px solid #E0E2E5;
+        color: #000;
     }
 }
 

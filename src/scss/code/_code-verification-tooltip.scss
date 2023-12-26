@@ -6,27 +6,79 @@
 .tooltip-block {
     position: absolute;
     top: -20px;
-    left: calc(100% + 10px);
+    left: calc(100% + 15px);
     background: #404040;
     padding: 20px;
     border-radius: 20px;
     min-width: 400px;
     max-width: 400px;
+    text-align: right;
+    z-index: 5;
+    @media screen and (max-width: 1439px) {
+        padding: 20px 15px;
+        min-width: 280px;
+        max-width: 280px;
+    }
+    @media screen and (max-width: 1199px) {
+        left: auto;
+        top: 30px;
+    }
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 20px 25px;
+    }
     &:before {
-        content: '';
+        content: "";
         top: 20px;
-        width: 18px;
-        height: 9px;
-        left: -18px;
+        width: 11px;
+        height: 21px;
+        left: -10px;
         position: absolute;
-        background: url(../../img/tooltip.svg) 0 0 no-repeat;
+        background: url(../../img/tooltip.svg) -28px -21px no-repeat;
+        @media screen and (max-width: 1199px) {
+            top: -15px;
+            left: calc(50% - -10px);
+            transform: rotate(90deg);
+        }
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    &__close {
+        background: transparent;
+        border: 0;
+        margin: 0 0 10px 0;
+        padding: 0;
+        display: none;
+        cursor: pointer;
+        @media screen and (max-width: 767px) {
+            display: inline-block;
+        }
     }
     &__text {
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 14px !important;
+        line-height: 19px !important;
         color: #D4D4D4 !important;
         font-family: myriadpro;
-        font-weight: 500;
+        font-weight: 500 !important;
+        text-align: left;
+        @media screen and (max-width: 767px) {
+            margin: 0 0 10px 0 !important;
+        }
+    }
+    &__desc {
+        font-size: 14px !important;
+        line-height: 19px !important;
+        color: #E8EAEC !important;
+        text-align: left;
     }
     &__list {
         display: block;
@@ -43,6 +95,7 @@
             color: #E8EAEC;
             font-family: myriadpro;
             font-weight: 400;
+            text-align: left;
             &:last-child {
                 margin: 0;
             }
@@ -57,6 +110,14 @@
                 left: 0;
                 font-family: myriadpro;
                 font-weight: 400;
+            }
+            a {
+                color: #E8EAEC;
+                text-decoration: none;
+                &:hover {
+                    color: #E8EAEC;
+                    text-decoration: underline;
+                }
             }
         }
     }

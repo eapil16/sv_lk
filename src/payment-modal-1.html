@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Оплата - Доверительный платеж подключен",
+"description":"",
+"keywords":"",
+"favicon":"",
+})
+
+<body>
+	<div class="wrapper">
+		@@include('components/page-blocks/_header.html')
+		<main class="main">
+			<div class="container-fluid">
+				<div class="payment">
+					<a href="#" class="block-form__back">
+						<span class="block-form__back_image">
+							<img src="img/arrow-right.svg" alt="">
+						</span>
+						Вернуться назад
+					</a>
+					<h1>Оплата услуг</h1>
+					<div class="payment-flex">
+						<div class="payment-content">
+							<div class="payment-content__flex">
+								<div class="payment-content__info">
+									<p class="title">Лицевой счет</p>
+									<p class="number">№ 18765901968</p>
+									<p>г. Кстово, пл. Мира, д. 2Б, кв. 64 </p>
+									<p class="system">Система расчета: Авансовая</p>
+								</div>
+								<div class="payment-content__total">
+									<p>Сумма к оплате:</p>
+									<p class="summ">500 руб.</p>
+								</div>
+							</div>
+							<p class="caption">Услуги:</p>
+							<p class="desc">
+								<img src="img/icon-1.svg" alt="">
+								Интернет: Кстово на ладони 100М
+							</p>
+							<p class="desc">
+								<img src="img/icon-2.svg" alt="">
+								Цифровое ТВ: Близкий TV
+							</p>
+							<p class="desc">
+								<img src="img/icon-3.svg" alt="">
+								Видеонаблюдение: За безопасность
+							</p>
+						</div>
+						<form class="payment-total">
+							<div class="payment-total__item">
+								<p>Сумма к оплате:</p>
+								<div class="payment-total__item_group">
+									<input class="form-control" type="text" placeholder="" value="1500">
+									<span class="label">руб.</span>
+								</div>
+								<div class="payment-total__item_buttons">
+									<button class="button" type="button">500 руб.</button>
+									<button class="button" type="button">1000 руб.</button>
+									<button class="button" type="button">1500 руб.</button>
+								</div>
+								<div class="code-tooltip">
+									<a href="#" class="code-link">
+										Подключить автоплатеж
+										<span>?</span>
+									</a>
+								</div>
+							</div>
+							<div class="payment-total__item">
+								<p>Выслать чек на email:</p>
+								<input class="form-control" type="text" placeholder="" value="Konstantin@mail.ru">
+							</div>
+							<div class="payment-total__buttons">
+								<p>Комиссия не взимается</p>
+								<button class="button button-red" type="submit">Оплатить</button>
+								<a href="#" class="button button-white">Доверительный платеж</a>
+								<a href="#" class="link">
+									Сформировать квитанцию для оплаты
+									<img src="img/download.svg" alt="">
+								</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="modal">
+			<div class="modal-content">
+				<div class="modal-close">
+					<img src="img/close-button.svg" alt="">
+				</div>
+				<div class="letter-sent__image">
+					<img src="/img/pay.svg" alt="">
+				</div>
+				<p class="title">Доверительный платеж успешно подключен!</p>
+				<p>Вы можете продолжать пользоваться нашими услугами без ограничений.</p>
+				<a href="#" class="button button-red">Вернуться в личный кабинет</a>
+			</div>
+		</div>
+
+		@@include('components/page-blocks/_footer.html')
+		@@include('components/page-blocks/_scripts.html')
+	</div>
+</body>
+
+</html>
