@@ -7,11 +7,11 @@
         margin: 0 0 15px 0;
     }
     h1 {
-        font-size: 34px;
-        line-height: 41px;
+        font-size: 28px;
+        line-height:34px;
         color: #000;
         font-family: myriadpro;
-        font-weight: bold;
+        font-weight: 500;
         margin: 0 0 55px 0;
         @media screen and (max-width: 767px) {
             margin: 0 0 34px 0;
@@ -148,7 +148,7 @@
                     min-width: 320px;
                     max-width: 320px;
                     &:before {
-                        top: -15px;
+                        top: -14px;
                         left: calc(50% - 6px);
                         transform: rotate(90deg);
                     }

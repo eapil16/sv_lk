@@ -180,13 +180,13 @@
 
 .password-control {
     position: absolute;
-	top: 17px;
+	top: 12px;
 	right: 15px;
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background: url(../../img/view.svg) center center no-repeat;
+	background: url(../img/view.svg) center center no-repeat;
     &.view {
-	    background: url(../../img/no-view.svg) center center no-repeat;
+	    background: url(../img/no-view.svg) center center no-repeat;
     }
 }
