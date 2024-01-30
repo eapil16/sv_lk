@@ -12,7 +12,7 @@
         color: #000;
         font-family: myriadpro;
         font-weight: 500;
-        margin: 0 0 55px 0;
+        margin: 0 0 35px 0;
         @media screen and (max-width: 767px) {
             margin: 0 0 34px 0;
         }
@@ -177,13 +177,13 @@
                     line-height: 18px;
                     color: #949494;
                     position: absolute;
-                    right: 15px;
-                    top: 19px;
+                    right: 10px;
+                    top: 15px;
                     font-family: myriadpro;
                     font-weight: 400;
                 }
                 .form-control {
-                    padding: 20px 55px 18px 15px;
+                    padding: 15px 55px 12px 10px;
                 }
             }
             .code-tooltip {
